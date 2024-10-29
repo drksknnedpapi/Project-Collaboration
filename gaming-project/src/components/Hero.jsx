@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "../style/Hero.css";
 import Carousel from "./Carousel";
+import TextEncrypted from "./EncryptedText"; // Import the new component
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
@@ -68,17 +69,19 @@ const Hero = () => {
         start: "top 40%",
       },
     });
+
+    document.querySelector("#back").addEventListener("click", () => {
+      gsap.to(window, { duration: 1, scrollTo: "body" });
+    });
   }, []);
 
   return (
     <div className="hero">
-      <div className="overlay-text" id="text">
-        <h1 className="text0">Welcome</h1>
-        <h1 className="text1">to the</h1>
-        <h1 className="text2">Game</h1>
-        <h1 className="text3">World</h1>
+      <div className="overlay-text">
+        <TextEncrypted text="Welcome to the Game World" interval={50} />
       </div>
       <Carousel images={images} interval={5000} />
+      <div id="back">Back to Top</div>
     </div>
   );
 };

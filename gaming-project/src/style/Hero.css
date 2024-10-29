@@ -21,10 +21,14 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
   color: white;
+  text-align: center;
   z-index: 1;
+  font-size: 6em; /* Adjust font size if needed */
+  font-weight: 700;
+  text-shadow:15px 15px 1px rgba(0, 0, 0, 1);
 }
+
 
 .text0, .text2 {
   color: black;
