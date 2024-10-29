@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: ivory;
+  background: black;
   width: 100%;
   height: 100%;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  padding-bottom: 100vh;
 }
 
 .hero {
@@ -16,37 +16,39 @@ body {
   position: relative;
 }
 
-.overlay-text {
+.overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  background: linear-gradient(to right, rgb(0, 0, 0), transparent);
+  z-index: 1;
+  height: 100vh;
+  top: 0%;
+}
+
+.overlay-text {
+  position: relative;
+  top: 40%;
+  left: 25%;
+  width: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  -webkit-text-stroke: 4px  rgb(0, 0, 0); /* Width and color of the outline */
   text-align: center;
   z-index: 1;
-  font-size: 6em; /* Adjust font size if needed */
-  font-weight: 700;
+  font-size: 7em; /* Adjust font size if needed */
+  font-weight: 800;
+  line-height: 100px;
   text-shadow:15px 15px 1px rgba(0, 0, 0, 1);
-}
-
-
-.text0, .text2 {
-  color: black;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-}
-
-.text1, .text3 {
-  color: black;
-  -webkit-text-fill-color: #bc0000;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
 }
 
 #text h1 {
   font-size: 7em;
   margin: 0;
+}
+
+.button {
+  z-index: 99;
 }
 
 .hero::before {

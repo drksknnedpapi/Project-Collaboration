@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const chars = "-_~`!@#$%^&*()+=[]{}|;:,.<>?";
+const chars = "AMOBEVU";
 
 const TextEncrypted = ({ text, interval = 50 }) => {
   const [outputText, setOutputText] = useState("");
