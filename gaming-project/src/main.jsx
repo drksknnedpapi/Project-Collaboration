@@ -5,6 +5,7 @@ import './index.css';
 
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Explore from './components/Explore';
 import Dashboard from './components/Dashboard';
 
 createRoot(document.getElementById('root')).render(
@@ -15,6 +16,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/" element={<Hero />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
+      <Explore />
     </Router>
   </StrictMode>
 );

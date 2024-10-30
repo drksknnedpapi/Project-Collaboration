@@ -4,6 +4,7 @@ import "../index.css";
 import Carousel from "./Carousel";
 import TextEncrypted from "./EncryptedText"; // Import the new component
 
+
 /*Import background images for the Carousel */
 import {
   arenaBreakout,
@@ -33,24 +34,26 @@ const Hero = () => {
           <div className="overlay">
             <div className="hero" id="hero">
               <div className="container">
-                <TextEncrypted text="" interval={100} />
+                
 
-                <p class="hero-subtitle">The Season 8</p>
+                <p className="hero-subtitle"><TextEncrypted text="The Season 8" interval={100} /></p>
 
-                <h1 class="h1 hero-title">Steam</h1>
+                <h1 className="h1 hero-title"><TextEncrypted text="stream!" interval={200} /></h1>
 
-                <div class="btn-group">
-                  <button class="btn btn-primary">
+                <div className="btn-group">
+                  <button className="btn btn-primary">
                     <span>Watch live</span>
 
                     <ion-icon name="play-circle"></ion-icon>
                   </button>
 
-                  <button class="btn btn-link">Dream making</button>
+                  <button className="btn btn-link">Dashboard</button>
                 </div>
               </div>
             </div>
           </div>
+
+          {/*Carousel for Background */}
 
           <Carousel images={images} interval={5000} />
         </div>

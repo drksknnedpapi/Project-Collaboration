@@ -1,7 +1,6 @@
 /* Nav Bar Styling for iPad and Larger Screens */
-
 header {
-  position: absolute;
+  position: fixed; /* Make sure navbar is fixed */
   z-index: 99;
   width: 100vw;
   height: 70px;
@@ -14,6 +13,7 @@ header nav {
   align-items: center;
   justify-content: flex-end;
   position: -webkit-sticky;
+  position: sticky;
 }
 
 nav ul {
@@ -50,5 +50,18 @@ nav a {
   transform: scaleX(1);
   transform-origin: left;
 }
+
+/* Navbar visible */
+.navbar-visible {
+  transition: top 0.3s ease-in-out;
+  top: 0;
+}
+
+/* Navbar hidden */
+.navbar-hidden {
+  transition: top 0.3s ease-in-out;
+  top: -70px; /* Adjust this to match your navbar height */
+}
+
 
 /* Side Bar Styling for Smaller Screens */

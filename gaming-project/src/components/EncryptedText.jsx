@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "../index.css"
 
-const chars = "AMOBEVU";
+const chars = "!F#u$8C$IB$@!#)fbDBI@h(bD$^#*$&@)Hb#(&h(huBU";
 
-const TextEncrypted = ({ text, interval = 50 }) => {
+const TextEncrypted = ({ text, interval = 70 }) => {
   const [outputText, setOutputText] = useState("");
   const [isMounted, setIsMounted] = useState(false);
 

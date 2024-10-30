@@ -1,0 +1,38 @@
+.explore-section {
+    position:sticky;
+    height: 200vh;
+    width: 100vw;
+    background-color: var(--raisin-black-2);
+}
+.section-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(to bottom, black, transparent);
+}
+
+
+/*                                                             *\
+        MAIN STYLING FOR CONTENT
+\*                                                              */
+
+.container {
+    height: 80%;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+}
+
+.explore-title {
+    margin: 80px 75px;
+    margin-top:70px;
+    font-size: var(--fs-2);
+    font-weight: var(--fw-2);
+}
+.explore-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-left: 50px;
+}
