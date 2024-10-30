@@ -20,9 +20,6 @@ const Navbar = () => {
             <li><Link to="/stream" className="nav-item">Stream</Link></li>
           </ul>
           <ul>
-            <li><Link to="/about" className="nav-item">About Us</Link></li>
-          </ul>
-          <ul>
             <li><Link to="/dashboard" className="nav-item">Dashboard</Link></li>
           </ul>
           <ul>

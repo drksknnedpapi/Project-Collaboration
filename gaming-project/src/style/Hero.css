@@ -1,6 +1,5 @@
 /* General Styling*/
 body {
-  font-family: 'Orbitron', sans-serif;
   color: white;
   background: black;
   width: 100%;
@@ -10,13 +9,57 @@ body {
   overflow-x: hidden;
   padding-bottom: 100vh;
 }
-/*Selective Styling for the Hero Div*/
+
+
 .hero {
+  padding: var(--section-padding) 0;
+  height: 100vh;
+  max-height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-subtitle {
+  color: var(--white);
+  font-family: var(--ff-oswald);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  text-shadow: 4px 7px var(--onyx);
+  margin-bottom: 15px;
+}
+
+.hero-title {
+ margin-bottom: 10px; 
+ font-family: var(--ff-refault);
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .btn-primary ion-icon { font-size: 25px; }
+
+
+
+
+
+
+/*Selective Styling for the Hero Div*/
+
+
+.hero-section {
   height: 100vh;
   width: 100vw;
   position: relative;
 }
-.hero::before {
+.hero-section::before {
   content: "";
   position: absolute;
   top: 0;
@@ -27,6 +70,8 @@ body {
   z-index: 0;
 }
 
+
+
 /*Selective Styling for an Overlay to display text over Carousel*/
 .overlay {
   position: absolute;
@@ -36,14 +81,4 @@ body {
   z-index: 1;
   height: 100vh;
   top: 0%;
-}
-#text-section {
-  height: 100%;
-  width: 50%;
-  justify-content: space-around;
-}
-#text-section div {
-  display: flex;
-  flex-direction: column;
-  height: 40%;
 }

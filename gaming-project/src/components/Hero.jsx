@@ -1,5 +1,6 @@
 import React from "react";
 import "../style/Hero.css";
+import "../index.css";
 import Carousel from "./Carousel";
 import TextEncrypted from "./EncryptedText"; // Import the new component
 
@@ -26,16 +27,35 @@ const Hero = () => {
 
   /* Return the content of the page */
   return (
-    <div className="hero">
-      <div className="overlay">
-        <div id="text-section">
-            <div><h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1></div>
-            <div></div>
-            {/*<TextEncrypted text="Enter the World of Gamers !" interval={100} />*/}
+    <article>
+      <section className="hero-section">
+        <div>
+          <div className="overlay">
+            <div className="hero" id="hero">
+              <div className="container">
+                <TextEncrypted text="" interval={100} />
+
+                <p class="hero-subtitle">The Season 8</p>
+
+                <h1 class="h1 hero-title">Steam</h1>
+
+                <div class="btn-group">
+                  <button class="btn btn-primary">
+                    <span>Watch live</span>
+
+                    <ion-icon name="play-circle"></ion-icon>
+                  </button>
+
+                  <button class="btn btn-link">Dream making</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <Carousel images={images} interval={5000} />
         </div>
-      </div>
-      <Carousel images={images} interval={5000} />
-    </div>
+      </section>
+    </article>
   );
 };
 
